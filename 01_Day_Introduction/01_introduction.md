@@ -118,13 +118,13 @@ Lets write our very first script on the python scripting shell.
 Well done, you wrote your first python script on python interactive shell. How do we close this shell ?
 To close the shell, next to this symbol >> write **exit()** command and press Enter.
 
-![Exit from python shell](./images/exit_from_shell.png)
+![Exit from python shell](../images/exit_from_shell.png)
 
 Now, you know how to open the python interactive shell and how to exit from it.
 
 Python will give you results if you write scripts that python understands, if not it returns errors. Let's make a deliberate mistake and see what python will return.
 
-![Invalid Syntax Error](./images/invalid_syntax_error.png)
+![Invalid Syntax Error](../images/invalid_syntax_error.png)
 
 As you can see from the returned error, python is so clever that it knows the mistake we made and which was _Syntax Error: invalid syntax_. Using x as multiplication in python is a syntax error because (x) is not a valid syntax in python. Instead of (**x**) we use asterisk (*) for multiplication. The returned error clearly shows what to fix.
 The process of identifying and removing errors from a program is called *debugging*. Let's debug it by putting * in place of **x**.
@@ -182,7 +182,7 @@ Open the visual studio code by double clicking the visual studio icon. When you 
 
 Create a folder named 30DaysOfPython on your desktop. Then open it using visual studio code.
 
-![Opening Project on Visual studio](./images/how_to_open_project_on_vscode.png)
+![Opening Project on Visual studio](../images/how_to_open_project_on_vscode.png)
 
 ![Opening a project](../images/opening_project.png)
 
