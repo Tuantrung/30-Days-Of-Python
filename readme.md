@@ -1,3 +1,19 @@
+<div align="center">
+
+  <h1> 30 Days Of Python</h1>
+
+  <sub>Author:
+  <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+  <small> First Edition: Nov 22 - Dec 22, 2019</small>
+  </sub>
+
+  <sub>2nd Author:
+  <a href="https://www.linkedin.com/in/nguyen-xuan-tuan-trung-564362186/" target="_blank">Tuan Trung</a><br>
+  <small> First Edition: Nov 07 - Nov 07, 2021</small>
+  </sub>
+</div>
+
+<div>
 # 🐍 30 Days Of Python 
 
 
@@ -34,6 +50,8 @@
 |  28   |  [API](./28_Day_API/28_API.md)     |
 |  29   |  [Building API](./29_Day_Building_API/29_building_API.md)     |
 |  30   |  [Conclusions](./30_Day_Conclusions/30_conclusions.md)      |
+
+<strong><em>Note</em></strong>: This is my edition repository, forked from root repository of Asabeneh and added my source code each day in this challenge.
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 <div>
