@@ -1,4 +1,4 @@
-# author: Tuan Trung
+# Author: Tuan Trung
 # 30 Days Of Python: Day 1 - Introduction
 
 # Exercises - Day 1
