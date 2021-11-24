@@ -67,10 +67,10 @@ complex_number = 1+2j
 # print('The y-intercept of y = 2x - 2 is {}\n'.format((x, y)))
 
 # 9. Slope is (m = y2-y1/x2-x1). Find the slope between point (2, 2) and point (6,10)
-# first = (2, 2)
-# second = (6, 10)
-# slope2 = (first[1] - second[1]) / (first[0] - second[0])
-# print('The slope between point (2, 2) and point (6,10) is {}'.format(slope2))
+first = (2, 2)
+second = (6, 10)
+slope2 = (first[1] - second[1]) / (first[0] - second[0])
+print('The slope between point (2, 2) and point (6,10) is {}'.format(slope2))
 
 # 10. Compare the slopes in tasks 8 and 9.
 # if slope1 > slope2:
