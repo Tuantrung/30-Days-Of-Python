@@ -80,5 +80,69 @@ print('The slope between point (2, 2) and point (6,10) is {}'.format(slope2))
 # else:
 #     print("The slope of task 8 is equal to the slope of task 9\n")
 
+"""
+  11. Calculate the value of y (y = x^2 + 6x + 9). 
+      Try to use different x values and figure out at what x value y is 0.
+"""
 
+# 12. Find the length of 'python' and 'jargon' and make a falsy comparison statement.
+# print('The length of python is {}'.format(len('python')))
+# print('The length of jargon is {}'.format(len('jargon')))
+# print('Is the length of python equal the length of jargon? {}\n'.format(len('python') is len('jargon')))
 
+# 13. Use and operator to check if 'on' is found in both 'python' and 'jargon'.
+# print('Is "on" found in both "python" and "jargon"? {}\n'.format(('on' in 'python') and ('on' in 'jargon')))
+
+"""
+  14. I hope this course is not full of jargon. Use in operator to check 
+      if jargon is in the sentence.
+"""
+# print('Is jargon in the sentence? {}\n'.format('jargon' in 'I hope this course is not full of jargon'))
+
+# 15. There is no 'on' in both dragon and python.
+# print('Is there no "on" in both dragon and python? {}\n'.format(('on' not in 'dragon') and ('on' not in 'python')))
+
+# 16. Find the length of the text python and convert the value to float and convert it to string
+# print('The length of the text python is {}'.format(len('python')))
+# len_float = float(len('python'))
+# print('Convert to float: {}'.format(len_float))
+# len_string = str(len_float)
+# print('Convert to string: {}\n'.format(len_string))
+
+"""
+  17. Even numbers are divisible by 2 and the remainder is zero. 
+      How do you check if a number is even or not using python?
+"""
+# num = int(input('Enter the number: '))
+# if(num % 2) == 0:
+#     print('{} is a even number.\n'.format(num))
+# else:
+#     print('{} is a odd number.\n'.format(num))
+
+# 18. The floor division of 7 by 3 is equal to the int converted value of 2.7.
+
+# 19. Check if type of '10' is equal to 10.
+# print('Is type of "10" equal to 10. {}\n'.format(type('10') is type(10)))
+
+# 20. Check if int('9.8') is equal to 10
+# print('Is int(9.8) is equal to 10. {}\n'.format(int(9.8) == 10))
+
+"""
+  21. Write a script that prompts the user to enter hours and rate per hour. 
+      Calculate pay of the person?
+"""
+# hours = int(input('Enter hours: '))
+# rate = int(input('Enter rate per hour: '))
+# pay_of_the_person = hours * rate
+# print('Your weekly earning is: {}'.format(pay_of_the_person))
+
+"""
+  22. Write a script that prompts the user to enter number of years. 
+      Calculate the number of seconds a person can live. Assume someone lives up to hundred years
+"""
+# number_of_years = int(input('Enter number of years you have lived: '))
+# print('You have lived for {} seconds.\n'.format(number_of_years * 365 * 24 * 60 * 60))
+
+# 23. Write a python script that displays the following table
+for i in range(1, 6):
+    print(i, i**0, i**1, i**2, i**3, i**4)
