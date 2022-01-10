@@ -1,248 +1,140 @@
+# Author: Tuan Trung
+# 30 Days Of Python: Day 4 - Strings
 
-# Single line comment
-letter = 'P'                # A string could be a single character or a bunch of texts
-print(letter)               # P
-print(len(letter))          # 1
-greeting = 'Hello, World!'  # String could be  a single or double quote,"Hello, World!"
-print(greeting)             # Hello, World!
-print(len(greeting))        # 13
-sentence = "I hope you are enjoying 30 days of python challenge"
-print(sentence)
+# Exercises - Day 4
 
-# Multiline String
-multiline_string = '''I am a teacher and enjoy teaching.
-I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python.'''
-print(multiline_string)
-# Another way of doing the same thing
-multiline_string = """I am a teacher and enjoy teaching.
-I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python."""
-print(multiline_string)
+# 1. Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
+strings = ['Thirty', 'Days', 'Of', 'Python']
+concatenated_string = ' '.join(strings)
+print(concatenated_string, '\n')
 
-# String Concatenation
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-space = ' '
-full_name = first_name  +  space + last_name
-print(full_name) # Asabeneh Yetayeh
-# Checking length of a string using len() builtin function
-print(len(first_name))  # 8
-print(len(last_name))   # 7
-print(len(first_name) > len(last_name)) # True
-print(len(full_name)) # 15
+# 2. Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
+strings = ['Coding', 'For', 'All']
+concatenated_string = ' '.join(strings)
+print(concatenated_string, '\n')
 
-#### Unpacking characters 
-language = 'Python'
-a,b,c,d,e,f = language # unpacking sequence characters into variables
-print(a) # P
-print(b) # y
-print(c) # t 
-print(d) # h
-print(e) # o
-print(f) # n
+# 3. Declare a variable named company and assign it to an initial value "Coding For All".
+company = "Coding For All"
 
-# Accessing characters in strings by index
-language = 'Python'
-first_letter = language[0]
-print(first_letter) # P
-second_letter = language[1]
-print(second_letter) # y
-last_index = len(language) - 1
-last_letter = language[last_index]
-print(last_letter) # n
+# 4. Print the variable company using print().
+print(company, '\n')
 
-# If we want to start from right end we can use negative indexing. -1 is the last index
-language = 'Python'
-last_letter = language[-1]
-print(last_letter) # n
-second_last = language[-2]
-print(second_last) # o
+# 5. Print the length of the company string using len() method and print().
+print(len(company), '\n')
 
-# Slicing
+# 6. Change all the characters to capital letters using upper() method.
+print(company.upper(), '\n')
 
-language = 'Python'
-first_three = language[0:3] # starts at zero index and up to 3 but not include 3
-last_three = language[3:6]
-print(last_three) # hon
-# Another way
-last_three = language[-3:]
-print(last_three)   # hon
-last_three = language[3:]
-print(last_three)   # hon
+# 7. Change all the characters to lowercase letters using lower() method.
+print(company.lower(), '\n')
 
-# Skipping character while splitting Python strings
-language = 'Python'
-pto = language[0:6:2] # 
-print(pto) # pto
+# 8. Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
+print(company.capitalize())
+print(company.title())
+print(company.swapcase(), '\n')
 
-# Escape sequence
-print('I hope every one enjoying the python challenge.\nDo you ?') # line break
-print('Days\tTopics\tExercises')
-print('Day 1\t3\t5')
-print('Day 2\t3\t5')
-print('Day 3\t3\t5')
-print('Day 4\t3\t5')
-print('This is a back slash  symbol (\\)') # To write a back slash
-print('In every programming language it starts with \"Hello, World!\"')
+# 9. Cut(slice) out the first word of Coding For All string.
+print(company[0:6], '\n')
 
-## String Methods
-# capitalize(): Converts the first character the string to Capital Letter
+# 10. Check if Coding For All string contains a word Coding using the method index, find or other methods.
+print(company.find('Coding'))
+print(company.rfind('Coding'))
+print(company.index('Coding'), '\n')
 
-challenge = 'thirty days of python'
-print(challenge.capitalize()) # 'Thirty days of python'
+# 11. Replace the word coding in the string 'Coding For All' to Python.
+print(company.replace('Coding', 'Programming'), '\n')
 
-# count(): returns occurrences of substring in string, count(substring, start=.., end=..)
+# 12. Change Python for Everyone to Python for All using the replace method or other methods.
+print('Python for Everyone'.replace('Python for All'))
 
-challenge = 'thirty days of python'
-print(challenge.count('y')) # 3
-print(challenge.count('y', 7, 14)) # 1
-print(challenge.count('th')) # 2`
+# 13. Split the string 'Coding For All' using space as the separator (split()) .
 
-# endswith(): Checks if a string ends with a specified ending
+# 14. "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
 
-challenge = 'thirty days of python'
-print(challenge.endswith('on'))   # True
-print(challenge.endswith('tion')) # False
+# 15. What is the character at index 0 in the string Coding For All.
 
-# expandtabs(): Replaces tab character with spaces, default tab size is 8. It takes tab size argument
+# 16. What is the last index of the string Coding For All.
 
-challenge = 'thirty\tdays\tof\tpython'
-print(challenge.expandtabs())   # 'thirty  days    of      python'
-print(challenge.expandtabs(10)) # 'thirty    days      of        python'
+# 17. What character is at index 10 in "Coding For All" string.
 
-# find(): Returns the index of first occurrence of substring
+# 18. Create an acronym or an abbreviation for the name 'Python For Everyone'.
 
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th')) # 0
+# 19. Create an acronym or an abbreviation for the name 'Coding For All'.
 
-# format()	formats string into nicer output    
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-job = 'teacher'
-country = 'Finland'
-sentence = 'I am {} {}. I am a {}. I live in {}.'.format(first_name, last_name, job, country)
-print(sentence) # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
+# 20. Use index to determine the position of the first occurrence of C in Coding For All.
 
-radius = 10
-pi = 3.14
-area = pi # radius ## 2
-result = 'The area of circle with {} is {}'.format(str(radius), str(area))
-print(result) # The area of circle with 10 is 314.0
+# 21. Use index to determine the position of the first occurrence of F in Coding For All.
 
-# index(): Returns the index of substring
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th')) # 0
+# 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
 
-# isalnum(): Checks alphanumeric character
+"""
+  23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence:
+      'You cannot end a sentence with because because because is a conjunction'
+"""
 
-challenge = 'ThirtyDaysPython'
-print(challenge.isalnum()) # True
+"""
+  24. Use rindex to find the position of the last occurrence of the word because in the following sentence: 
+      'You cannot end a sentence with because because because is a conjunction'
+"""
 
-challenge = '30DaysPython'
-print(challenge.isalnum()) # True
+"""
+  25. Slice out the phrase 'because because because' in the following sentence: 
+      'You cannot end a sentence with because because because is a conjunction'
+"""
 
-challenge = 'thirty days of python'
-print(challenge.isalnum()) # False
+"""
+  26. Find the position of the first occurrence of the word 'because' in the following sentence: 
+      'You cannot end a sentence with because because because is a conjunction'
+"""
 
-challenge = 'thirty days of python 2019'
-print(challenge.isalnum()) # False
+"""
+  27. Slice out the phrase 'because because because' in the following sentence: 
+      'You cannot end a sentence with because because because is a conjunction'
+"""
 
-# isalpha(): Checks if all characters are alphabets
+# 28. Does ''Coding For All' start with a substring Coding?
 
-challenge = 'thirty days of python'
-print(challenge.isalpha()) # True
-num = '123'
-print(num.isalpha())      # False
+# 29. Does 'Coding For All' end with a substring coding?
 
-# isdecimal(): Checks Decimal Characters
+# 30. '   Coding For All      '  , remove the left and right trailing spaces in the given string.
 
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th')) # 0
+"""
+  31. Which one of the following variables return True when we use the method isidentifier():
+      + 30DaysOfPython
+      + thirty_days_of_python
+"""
 
-# isdigit(): Checks Digit Characters
+"""
+  32. The following list contains the names of some of python libraries: 
+      ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+"""
 
-challenge = 'Thirty'
-print(challenge.isdigit()) # False
-challenge = '30'
-print(challenge.digit())   # True
+"""
+  33. Use the new line escape sequence to separate the following sentences.
+      I am enjoying this challenge.
+      I just wonder what is next.
+"""
 
-# isdecimal():Checks decimal characters
+"""
+  34. Use a tab escape sequence to write the following lines.
+      Name      Age     Country
+      Asabeneh  250     Finland
+"""
 
-num = '10'
-print(num.isdecimal()) # True
-num = '10.5'
-print(num.isdecimal()) # False
+"""
+  35. Use the string formating method to display the following:
+      radius = 10
+      area = 3.14 * radius ** 2
+      The area of a cricle with radius 10 is 314 meters square.
+"""
 
-
-# isidentifier():Checks for valid identifier means it check if a string is a valid variable name
-
-challenge = '30DaysOfPython'
-print(challenge.isidentifier()) # False, because it starts with a number
-challenge = 'thirty_days_of_python'
-print(challenge.isidentifier()) # True
-
-
-# islower():Checks if all alphabets in a string are lowercase
-
-challenge = 'thirty days of python'
-print(challenge.islower()) # True
-challenge = 'Thirty days of python'
-print(challenge.islower()) # False
-
-# isupper(): returns if all characters are uppercase characters
-
-challenge = 'thirty days of python'
-print(challenge.isupper()) #  False
-challenge = 'THIRTY DAYS OF PYTHON'
-print(challenge.isupper()) # True
-
-
-# isnumeric():Checks numeric characters
-
-num = '10'
-print(num.isnumeric())      # True
-print('ten'.isnumeric())    # False
-
-# join(): Returns a concatenated string
-
-web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
-result = '#, '.join(web_tech)
-print(result) # 'HTML# CSS# JavaScript# React'
-
-# strip(): Removes both leading and trailing characters
-
-challenge = ' thirty days of python '
-print(challenge.strip('y')) # 5
-
-# replace(): Replaces substring inside
-
-challenge = 'thirty days of python'
-print(challenge.replace('python', 'coding')) # 'thirty days of coding'
-
-# split():Splits String from Left
-
-challenge = 'thirty days of python'
-print(challenge.split()) # ['thirty', 'days', 'of', 'python']
-
-# title(): Returns a Title Cased String
-
-challenge = 'thirty days of python'
-print(challenge.title()) # Thirty Days Of Python
-
-# swapcase(): Checks if String Starts with the Specified String
-  
-challenge = 'thirty days of python'
-print(challenge.swapcase())   # THIRTY DAYS OF PYTHON
-challenge = 'Thirty Days Of Python'
-print(challenge.swapcase())  # tHIRTY dAYS oF pYTHON
-
-# startswith(): Checks if String Starts with the Specified String
-
-challenge = 'thirty days of python'
-print(challenge.startswith('thirty')) # True
-challenge = '30 days of python'
-print(challenge.startswith('thirty')) # False
+"""
+  36. Make the following using string formating methods:
+      8 + 6 = 14
+      8 - 6 = 2
+      8 * 6 = 48
+      8 / 6 = 1.33
+      8 % 6 = 2
+      8 // 6 = 1
+      8 ** 6 = 262144
+"""
