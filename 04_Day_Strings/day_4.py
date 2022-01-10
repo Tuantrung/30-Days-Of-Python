@@ -45,27 +45,37 @@ print(company.index('Coding'), '\n')
 print(company.replace('Coding', 'Programming'), '\n')
 
 # 12. Change Python for Everyone to Python for All using the replace method or other methods.
-print('Python for Everyone'.replace('Python for All'))
+print('Python for Everyone'.replace('Everyone', 'All'), '\n')
 
 # 13. Split the string 'Coding For All' using space as the separator (split()) .
+print(company.split(' '), '\n')
 
 # 14. "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(', '), '\n')
 
 # 15. What is the character at index 0 in the string Coding For All.
+print('The character at index 0 in the string Coding For All is {}.\n'.format(company[0]))
 
 # 16. What is the last index of the string Coding For All.
+print('The last index of the string Coding For All is {}.\n'.format(company[-1]))
 
 # 17. What character is at index 10 in "Coding For All" string.
+print('The character is at index 10 in "Coding For All" is {}.\n'.format(company[10]))
 
 # 18. Create an acronym or an abbreviation for the name 'Python For Everyone'.
+print("".join(e[0] for e in 'Python For Everyone'.split()), '\n')
 
 # 19. Create an acronym or an abbreviation for the name 'Coding For All'.
+print("".join(e[0] for e in 'Python For All'.split()), '\n')
 
 # 20. Use index to determine the position of the first occurrence of C in Coding For All.
+print(company.index('C'), '\n')
 
 # 21. Use index to determine the position of the first occurrence of F in Coding For All.
+print(company.index('F'), '\n')
 
 # 22. Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print(company.index('l'), '\n')
 
 """
   23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence:
