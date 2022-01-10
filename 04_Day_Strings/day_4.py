@@ -81,65 +81,88 @@ print(company.index('l'), '\n')
   23. Use index or find to find the position of the first occurrence of the word 'because' in the following sentence:
       'You cannot end a sentence with because because because is a conjunction'
 """
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.index('because'), '\n')
 
 """
   24. Use rindex to find the position of the last occurrence of the word because in the following sentence: 
       'You cannot end a sentence with because because because is a conjunction'
 """
+print(sentence.rindex('because'), '\n')
 
 """
   25. Slice out the phrase 'because because because' in the following sentence: 
       'You cannot end a sentence with because because because is a conjunction'
 """
+print(sentence[31:54], '\n')
 
 """
   26. Find the position of the first occurrence of the word 'because' in the following sentence: 
       'You cannot end a sentence with because because because is a conjunction'
 """
+print(sentence.find('because'), '\n')
 
 """
   27. Slice out the phrase 'because because because' in the following sentence: 
       'You cannot end a sentence with because because because is a conjunction'
 """
+print(sentence[31:54], '\n')
 
-# 28. Does ''Coding For All' start with a substring Coding?
+# 28. Does "Coding For All" start with a substring Coding?
+print(company.startswith('Coding'), '\n')
 
 # 29. Does 'Coding For All' end with a substring coding?
+print(company.endswith('coding'), '\n')
 
 # 30. '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+print(company.strip(' '), '\n')
 
 """
   31. Which one of the following variables return True when we use the method isidentifier():
       + 30DaysOfPython
       + thirty_days_of_python
 """
+a = '30DaysOfPython'
+print(a.isidentifier())
+b = 'thirty_days_of_python'
+print(b.isidentifier(), '\n')
 
 """
   32. The following list contains the names of some of python libraries: 
       ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
 """
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(' '.join(libraries), '\n')
 
 """
   33. Use the new line escape sequence to separate the following sentences.
       I am enjoying this challenge.
       I just wonder what is next.
 """
+sentences = 'I am enjoying this challenge. I just wonder what is next.'
+print(sentences.replace('.', '.\n'))
 
 """
   34. Use a tab escape sequence to write the following lines.
       Name      Age     Country
       Asabeneh  250     Finland
 """
+print('Name \t Age \t Country \nAsabeneh 250\t Finland\n')
 
 """
-  35. Use the string formating method to display the following:
+  35. Use the string formatting method to display the following:
       radius = 10
       area = 3.14 * radius ** 2
-      The area of a cricle with radius 10 is 314 meters square.
+      The area of a circle with radius 10 is 314 meters square.
 """
+radius = 10
+print('radius = {}'.format(radius))
+area = 3.14 * radius ** 2
+print('area = {}'.format(area))
+print('The area of a circle with radius {} is {} meters square'.format(radius, area), '\n')
 
 """
-  36. Make the following using string formating methods:
+  36. Make the following using string formatting methods:
       8 + 6 = 14
       8 - 6 = 2
       8 * 6 = 48
@@ -148,3 +171,12 @@ print(company.index('l'), '\n')
       8 // 6 = 1
       8 ** 6 = 262144
 """
+a = 8
+b = 6
+print('{} + {} = {}'.format(a, b, a + b))
+print('{} - {} = {}'.format(a, b, a - b))
+print('{} * {} = {}'.format(a, b, a * b))
+print('{} / {} = {:.2f}'.format(a, b, a / b)) # limits it to two digits after decimal
+print('{} % {} = {}'.format(a, b, a % b))
+print('{} // {} = {}'.format(a, b, a // b))
+print('{} ** {} = {}'.format(a, b, a ** b))
