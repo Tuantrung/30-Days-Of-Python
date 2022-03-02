@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52f0b237-035a-4a12-b509-1f090e02a675" name="Default Changelist" comment="Done exercise of day 3">
+      <change afterPath="$PROJECT_DIR$/../10_Day_Loops/day10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/day_3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration name="day-3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="day_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="03_Day_Operators" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -41,7 +43,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day-3.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -52,7 +54,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.day-3" />
+        <item itemvalue="Python.day_3" />
       </list>
     </recent_temporary>
   </component>
@@ -73,6 +75,7 @@
       <workItem from="1638344753423" duration="2399000" />
       <workItem from="1639321479895" duration="620000" />
       <workItem from="1639322341119" duration="43000" />
+      <workItem from="1646157787130" duration="136000" />
     </task>
     <task id="LOCAL-00001" summary="Done exercise of day 3">
       <created>1638328560488</created>
