@@ -1,7 +1,7 @@
 # Author: Tuan Trung
 # 30 Days Of Python: Day 17 - Exception Handling
 
-# Exercises - Day 16
+# Exercises - Day 17
 
 """
  1. names = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']. Unpack the first five countries
