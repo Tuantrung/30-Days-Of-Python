@@ -5,6 +5,7 @@
 
 import json
 import re
+import csv
 
 """
   1. Write a function which count number of lines and number of words in a text.
@@ -209,6 +210,8 @@ def find_most_frequent_words(file, num_of_word):
     output_list.sort(reverse=True)
 
     return output_list[0:num_of_word]
+
+
 # a
 print(find_most_frequent_words('../data/obama_speech.txt', 10))
 
@@ -240,9 +243,6 @@ print(find_most_frequent_words('../data/romeo_and_juliet.txt', 10))
      b) Count the number of lines containing JavaScript, javascript or Javascript 
      c) Count the number of lines containing Java and not JavaScript
 """
-import csv
-import re
-
 with open('../data/hacker_news.csv') as f:
     csv_reader = csv.reader(f, delimiter=',')
 
