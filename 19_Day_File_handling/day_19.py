@@ -6,6 +6,7 @@
 import json
 import re
 import csv
+from checks_text_similarity import *
 
 """
   1. Write a function which count number of lines and number of words in a text.
@@ -42,9 +43,9 @@ count_lines_words('../data/donald_speech.txt')
 count_lines_words('../data/melina_trump_speech.txt')
 
 """
-  2. Read the countries_data.json data file in data directory, 
+  2. Read the countries_data.json data file in data directory,
      create a function that finds the ten most spoken languages
-     
+
 # Your output should look like this
 print(most_spoken_languages(filename='./data/countries_data.json', 10))
 [(91, 'English'),
@@ -91,11 +92,11 @@ def most_spoken_languages(filename, numbers):
 most_spoken_languages(filename='../data/countries_data.json', numbers=3)
 
 """
-  3. Read the countries_data.json data file in data directory, 
+  3. Read the countries_data.json data file in data directory,
      create a function that creates a list of the ten most populated countries.
-  
+
   # Your output should look like this
-  
+
   print(most_populated_countries(filename='./data/countries_data.json', 10))
 
   [
@@ -147,12 +148,12 @@ with open('../data/email_exchanges_big.txt') as f:
             continue
 
 """
-  5. Find the most common words in the English language. 
-     Call the name of your function find_most_common_words, 
-     it will take two parameters - a string or a file and 
-     a positive integer, indicating the number of words. 
+  5. Find the most common words in the English language.
+     Call the name of your function find_most_common_words,
+     it will take two parameters - a string or a file and
+     a positive integer, indicating the number of words.
      Your function will return an array of tuples in descending order. Check the output.
-      
+
      # Your output should look like this
 
      print(find_most_common_words('sample.txt', 10))
@@ -168,7 +169,7 @@ with open('../data/email_exchanges_big.txt') as f:
      (2, 'I')]
 
      # Your output should look like this
-     
+
      print(find_most_common_words('sample.txt', 5))
 
      [(10, 'the'),
@@ -180,10 +181,10 @@ with open('../data/email_exchanges_big.txt') as f:
 # I can't find sample.txt anywhere
 
 """
-  6. Use the function, find_most_frequent_words to find: 
-  a) The ten most frequent words used in Obama's speech 
-  b) The ten most frequent words used in Michelle's speech 
-  c) The ten most frequent words used in Trump's speech 
+  6. Use the function, find_most_frequent_words to find:
+  a) The ten most frequent words used in Obama's speech
+  b) The ten most frequent words used in Michelle's speech
+  c) The ten most frequent words used in Trump's speech
   d) The ten most frequent words used in Melina's speech
 """
 
@@ -232,15 +233,15 @@ print(find_most_frequent_words('../data/melina_trump_speech.txt', 10))
      function to remove support words(remove_support_words) and 
      finally to check the similarity(check_text_similarity). List of stop words are in the data directory
 """
-# TODO: Will research and solve this problem in the future
+print(check_text_similarity('../data/melina_trump_speech.txt', '../data/michelle_obama_speech.txt'))
 
 # 8. Find the 10 most repeated words in the romeo_and_juliet.txt
 print(find_most_frequent_words('../data/romeo_and_juliet.txt', 10))
 
 """
-  9. Read the hacker news csv file and find out: 
-     a) Count the number of lines containing python or Python 
-     b) Count the number of lines containing JavaScript, javascript or Javascript 
+  9. Read the hacker news csv file and find out:
+     a) Count the number of lines containing python or Python
+     b) Count the number of lines containing JavaScript, javascript or Javascript
      c) Count the number of lines containing Java and not JavaScript
 """
 with open('../data/hacker_news.csv') as f:
