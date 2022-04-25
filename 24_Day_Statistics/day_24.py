@@ -1,7 +1,7 @@
 # Author: Tuan Trung
-# 30 Days Of Python: Day 23 - Statistics
+# 30 Days Of Python: Day 24 - Statistics
 
-# Exercises - Day 22
+# Exercises - Day 24
 
 import matplotlib.pyplot as plt
 import numpy as np
