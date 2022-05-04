@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Please Add Student</h1>
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="Name" name="name" id="name" value="{{
+          request.form.name }}">
+        <input type="date" placeholder="mm/dd/yyyy" name="birthyear" id="birthyear" value="{{
+          request.form.birthyear }}">
+        <input type="text" placeholder="country" name="country" id="country" value="{{
+          request.form.country }}">
+        <input type="text" placeholder="city" name="city" id="city" value="{{
+          request.form.city }}">
+        <textarea rows="4" cols="50" placeholder="Your skills separated by comma" name="skills" id="skills"></textarea>
+        <small>HTML, CSS, JavaScript etc</small>
+        <textarea rows="4" cols="50" name="bio" id="bio"></textarea>
+
+    <input class="btn btn-default" type="submit" value="Add Student">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+  </body>
+</html>
